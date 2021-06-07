@@ -1,0 +1,24 @@
+Algoritmo Ejercicio9
+	t1 <- 0
+	t2 <- 0
+	cantidadTemperaturas <- 0
+	temperaturas <- 0
+	Repetir
+		Escribir 'Ingrese la primera Temperatura'
+		Leer t1
+		Si (t1<>0) Entonces
+			Escribir 'Ingrese la segunda Temperatura'
+			Leer t2
+		FinSi
+		Si (t1>=5 Y t1<=15) Entonces
+			cantidadTemperaturas <- t1+cantidadTemperaturas
+			temperaturas <- temperaturas+1
+		FinSi
+		Si (t2>=5 Y t2<=15) Entonces
+			cantidadTemperaturas <- t2+cantidadTemperaturas
+			temperaturas <- temperaturas+1
+		FinSi
+	Hasta Que (t1=0)
+	promedio <- cantidadTemperaturas/temperaturas
+	Escribir 'El promedio de las temperaturas entre 5 grados y 15 grados es de ',promedio
+FinAlgoritmo
